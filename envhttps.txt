@@ -1,0 +1,52 @@
+APP_ENV=local
+APP_DEBUG=true
+APP_KEY=base64:uxw54+mj2be14ycRCaE2woKHrdackzAC9pPGs+FVS5M=
+APP_URL=http://localhost
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=administrativo
+DB_USERNAME=admin_o
+DB_PASSWORD='[!x(sT!ABauO'
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+SESSION_DRIVER=file
+QUEUE_DRIVER=sync
+
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_DRIVER=sendinblue
+MAIL_USERNAME=networks@agenciajaque.com
+SENDINBLUE_KEY=M6RAU0d3jgfrhDnZ
+
+S3_KEY=AKIAJXSUSDTO7P6R22KA
+S3_SECRET=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
+S3_REGION=sa-east-1
+S3_BUCKET=app-loung
+
+SESSION_DRIVER=file
+
+
+PARA SERVIDOR HTTPS HAY QUE HACER LO SIGUIENTE
+MODICIFAR E ARCHIVO .ENV APP_URL=https://localhost
+modificar uri en config/app 'url' => env('APP_URL', 'http://localhost')
+
+en appserviceprovider agregar \URL::forceSchema('https'); a cada funcion
+
+en routes todo dentro de 
+Route::group(['before' => 'force.ssl'], function()
+{
+Route::group(array('https'), function()
+{
+
+});
+   
+});
+
+
+

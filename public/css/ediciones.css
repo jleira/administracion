@@ -1,0 +1,25 @@
+.fileinput-upload{
+  display: none !important;
+}
+
+.fileinput-upload-button{
+  display: none !important;
+}
+
+.navbar{
+  background-color: #950248 !important;
+}
+
+.logo{
+  background-color: #950248 !important;
+}
+
+.user-header{
+  background-color: #950248 !important;
+}
+
+.skin-red .sidebar-menu > li:hover > a, .skin-red .sidebar-menu > li.active > a {
+    color: #ffffff;
+    background: #1e282c;
+    border-left-color: #950248 !important;
+}

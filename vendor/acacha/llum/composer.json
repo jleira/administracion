@@ -1,0 +1,36 @@
+{
+    "name": "acacha/llum",
+    "description": "Llum (light in catalan language) illuminates your Laravel projects.",
+    "keywords": ["laravel","scaffold","boilerplate"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergi Tur Badenas",
+            "email": "sergiturbadenas@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Acacha\\Llum\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Acacha\\Llum\\Tests\\": "tests/" }
+    },
+    "require": {
+        "illuminate/config": "~5.2.0",
+        "symfony/console": "~2.3|~3.0",
+        "symfony/process": "~2.3|~3.0",
+        "php": ">=5.5.9"
+    },
+    "scripts": {
+        "fix": "php-cs-fixer fix"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "bin": [
+        "llum"
+    ]
+}
